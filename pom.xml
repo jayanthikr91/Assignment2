@@ -30,5 +30,21 @@
   </dependencies>
   <build>
     <finalName>Helloworld</finalName>
+    <plugins>
+	<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				 <artifactId>tomcat7-maven-plugin</artifactId>
+				 <version>2.2</version>
+				<configuration>
+					<server>TomcatServer</server>
+					<url>http://localhost:8080/manager/text</url>
+					<path>/HelloWorld</path>
+					<username>admin</username>
+					<password>admin</password>
+					<update>true</update>
+				</configuration>
+			</plugin>
+   </plugins>	ss
   </build>
+  
 </project>
