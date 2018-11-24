@@ -44,7 +44,7 @@
 					<update>true</update>
 				</configuration>
 			</plugin>
-   </plugins>	ss
+   </plugins>	
   </build>
   
 </project>
