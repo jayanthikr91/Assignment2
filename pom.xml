@@ -37,7 +37,7 @@
 				 <version>2.2</version>
 				<configuration>
 					<server>TomcatServer</server>
-					<url>http://my89162dns.eastus2.cloudapp.azure.com:8081/manager/text</url>
+					<url>http://my89162dns.eastus2.cloudapp.azure.com:8084</url>
 					<path>/HelloWorld</path>
 					<username>admin</username>
 					<password>admin</password>
