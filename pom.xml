@@ -29,10 +29,7 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>Helloworld</finalName>
-    <properties>
-     <version>1.0</version>
-    </properties>
+	  <finalName>Helloworld</finalName>
     <plugins>
 	<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
@@ -46,7 +43,22 @@
 					<password>admin</password>
 					<update>true</update>
 				</configuration>
-			</plugin>
+	  </plugin>
+	    <plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-war-plugin</artifactId>
+		  <configuration>
+		   <manifest>
+		    <addDefaultImplementationEntries>false</addDefaultImplementationEntries>
+		   </manifest>
+		   <archive>
+		    <manifestEntries>
+		     <Major-Version>${project.version}</Major-Version>
+		     <Build-Version>${build.number}</Build-Version>
+		    </manifestEntries>
+		   </archive>
+		  </configuration>
+	 </plugin>
    </plugins>	
   </build>
  
