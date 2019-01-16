@@ -4,7 +4,7 @@
   <groupId>com.mindtree</groupId>
   <artifactId>Helloworld</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>SNAPSHOT-0.0.${v}</version>
   <name>Helloworld Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -44,20 +44,7 @@
 					<update>true</update>
 				</configuration>
 	  </plugin>
-	    <plugin>
-		  <groupId>org.apache.maven.plugins</groupId>
-		  <artifactId>maven-war-plugin</artifactId>
-		  <configuration>
-		   <manifest>
-		    <addDefaultImplementationEntries>false</addDefaultImplementationEntries>
-		   </manifest>
-		   <archive>
-		    <manifestEntries>
-		     <Build-Version>${build.number}</Build-Version>
-		    </manifestEntries>
-		   </archive>
-		  </configuration>
-	 </plugin>
+	    
    </plugins>	
   </build>
  
